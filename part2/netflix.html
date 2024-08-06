@@ -21,7 +21,9 @@
         }
         .first{
             height: 95vh;
-            background-image: url('./hey.jpg');
+            background-image: url('./Untitled\ design.jpg');
+            background-repeat: no-repeat;
+            background-size: cover;
             /* background-color: black; */
             margin-bottom: 10px;
         }
@@ -102,6 +104,8 @@
          display: flex;
          justify-content: center;
          align-items: center;
+         cursor: pointer;
+
          font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif; 
         }
         .btn1{
@@ -110,7 +114,8 @@
             width: 100px;
             border-radius: 5px;
             font-size: 15px;
-            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif; 
+        
             cursor: pointer;
         }
         .btn1 :hover{
@@ -275,9 +280,9 @@
         background-color: #333333ff;
     
     }
-    summary p{
-        color: aliceblue;
-    }
+      details p{
+        background-color: #333333a8;
+      }
     .bottom{
         width: 100%;
         display: flex;
@@ -289,6 +294,22 @@
     .tags{
         width: 80%;
         margin: 10px;
+        }
+        .lobottom input{
+            background-color: rgba(0, 0, 0, 0);
+            height: 10px;
+            width: 300px;
+            border: 2px solid rgb(180, 180, 180);
+              border-radius: 5px;
+              padding: 20px;
+              color: aliceblue;
+        }
+        .lobottom{
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            gap: 10px;
+
         }
     </style>
 </head>
@@ -417,7 +438,12 @@
             Kids profiles come with PIN-protected parental controls that let you restrict the maturity rating of content kids can watch and block specific titles you don’t want kids to see.</p>
         </details>
         </div>  
-    </div>
+        <p style="color: aliceblue;">Ready to watch? Enter your email to create or restart your membership.</p>
+        <div class="lobottom">
+            <input type="email" placeholder="emailaddres">
+            <button class="btn"> Get started ></button>
+        </div>
+      </div>
     
 </body>
 </html>
