@@ -4,29 +4,36 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Cabin:ital,wght@0,400..700;1,400..700&family=IBM+Plex+Sans:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;1,100;1,200;1,300;1,400;1,500;1,600;1,700&family=Kanit:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Nunito+Sans:ital,opsz,wght@0,6..12,200..1000;1,6..12,200..1000&display=swap" rel="stylesheet">
     <style>
         *{
             margin: 0px;
             /* background-color: azure; */
         }
         body{
-            background-color: rgba(115, 119, 122, 0.685);
+            background-color: rgba(20, 20, 20, 0.915);
         }
         .img1{
             height: 150px;
             width: 150px;
         }
         .first{
-            height: 100vh;
-            background-color: black;
+            height: 95vh;
+            background-image: url('./hey.jpg');
+            /* background-color: black; */
             margin-bottom: 10px;
         }
         .up{
             display: flex;
-            /* background-color: rgb(0, 136, 255); */
+            /* background-color: rgb(0, 136wh, 255); */
             justify-content: space-around;
-            align-items: center;
+            /* align-items: center; */
         
+        }
+        .t1{
+            font-family: "Kanit", sans-serif;
         }
         .sideleft{
             display: flex;
@@ -36,14 +43,14 @@
         }
         .sideright{
             display: flex;
-            justify-content: center;
-            align-items: self-end;
-            gap: 30px;
+            justify-content: flex-end;
+            align-items: center;
+            gap: 10px;
            /* background-color: aliceblue; */
            width: 50%;
         }
         .sideright select{
-            height: 40px;
+            height: 30px;
             border-radius: 5px;
             border: 2px solid white;
             background-color: transparent;
@@ -140,6 +147,7 @@
          display: flex;
          justify-content: flex-start;   
         }
+
         .secondright{
             width: 50%;
             display: flex;
@@ -153,7 +161,7 @@
             width: auto;
         }
         .third{
-            height: 500px;
+            height: 80vh;
             background-color: rgb(0, 0, 0);
             margin-top: 10px;
             display: flex;
@@ -180,7 +188,7 @@
             /* background-color: antiquewhite; */
         }
         .fourth{
-            height: 500px;
+            height: 80vh;
             display: flex;
             /* justify-content: center;
             align-items: center; */
@@ -208,11 +216,11 @@
         width: auto;
     }
     .fifth{
-        height: 500px;
+        height: 80vh;
         width: 100%;
         display: flex;
         background-color: black;
-        margin-top: 10pxq;
+        margin-top: 10px;
     }
     .fifthimg{
         width: 50%;
@@ -228,6 +236,9 @@
         justify-content: center;
         align-items: start;
         flex-direction: column;
+    }
+    .p1{
+        font-family: "IBM Plex Sans", sans-serif;
     }
     </style>
 </head>
@@ -250,11 +261,11 @@
         </div>
         <div class="center">
             <div class="centercontainer">
-                <h1 style="color: aliceblue;">
+                <h1 style="color: aliceblue; " class="t1">
                     Unlimited movies, TV shows and more
                 </h1>
-                <p style="color: aliceblue; text-align: center;">Watch anywhere. Cancel anytime.</p>
-                <p style="color: aliceblue;">Ready to watch? Enter your email to create or restart your membership</p>
+                <p style="color: aliceblue; text-align: center;" class="p1">Watch anywhere. Cancel anytime.</p>
+                <p style="color: aliceblue;" class="p1">Ready to watch? Enter your email to create or restart your membership</p>
                 
                 <div class="search">
                     <input  type="text" placeholder="Email adress" />
@@ -310,5 +321,6 @@
                 </p>
         </div>
     </div>
+    x
 </body>
 </html>
