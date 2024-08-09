@@ -3,75 +3,30 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
-    <style>
-        *{
-            margin: 0px;
-            background-color: rgba(236, 236, 236, 0.757);
-        }
-        .main{
-            height: 100vh;
-            width: 100%;
-            display: flex;
-           justify-content: space-between;
-           /* align-items: center; */
-           /* flex-wrap: wrap; */
-           /* flex-direction: row; */
-        }
-        .left{
-            height: 100%;
-            width: 60%;
-            /* background-color: aliceblue; */
-            display: flex;
-            justify-content: center;
-            /* align-items: center; */
-
-        }
-       
-        .subleft{
-            height: 80vh;
-            /* background-color: aqua; */
-            display: flex;
-            flex-direction: column;
-            justify-content: center;
-            margin-top: -40px;
-            width: 60%;
-            /* align-items: center; */
-            align-items: flex-start;
-            margin-left: 200px;
-        }
-        .h1tag{
-            color: rgb(0, 106, 255);
-            font-size: 65px;
-            /* background-color: antiquewhite; */
-        }
-        .ptag{
-            color: #333;
-            /* text-align: justify; */
-            font-size: 28px;
-        }
-   
-        
-    </style>
+    <link href="./A003.css" rel="stylesheet"/>
+        <title>Facebook</title>
 </head>
 <body>
-    <div class="main">
-        <div class="left">
-            <div class="subleft">
-                <h1 class="h1tag">facebook</h1>
-                <p class="ptag"> Facebook helps you connect and share <br>with the people in your life.</p>
+    <div class="maincontent">
+        <div class="leftcon">
+           <div class="subleft">
+            <p class="h1tag">facebook</p>
+            <p class="p-tag"> Facebook helps you connect and share <br>with the people in your life.</p>
+           </div> 
+      </div>
+        <div class="rightcont">
+            <div class="subcont">
+          <div class="cointainer">
+                <p> <input  type="text" placeholder="Email Addres or pone number"/></p>
+                <p> <input  type="text" placeholder="Password"/></p>
+                <p> <input class="btn" type="button" value="Login" placeholder="Password"/></p>
+                <a href="#"> Forgooten Password</a>
+                <p> <input class="btn1" type="button" value="create new account" placeholder="Password"/></p>
+          </div>
+          <p class="p-tag1"> <b>Create a Page</b> for a celebrity, brand or business.</p>
             </div>
         </div>
-        <div class="right"> 
-           <div class="forms">
-            <form>
-               <p> <input type="email, number" placeholder="Email adress or phone number" /> </p>
-              <p>  <input type="email, number" placeholder="password"/>
-              </p>
-            </form>
-           </div>
-            
-        </div>
     </div>
+       
 </body>
 </html>

@@ -76,6 +76,7 @@
         font-family: Verdana, Geneva, Tahoma, sans-serif;
       }
       .imge:hover{
+        transition: 2s ease-in; 
         box-shadow: 1px 1px 10px 2px rgb(0, 0, 0);
       }
       h1{
@@ -89,18 +90,38 @@
         display: flex;
         justify-content: center;
        align-items: center;
-       flex-wrap: wrap;
+       /* flex-wrap: wrap; */
       }
-      .submatter {
+      .leftofmatter{
+        width: 50%;
+        display: flex;
+        justify-content: flex-end;
+        align-items: end;
+      }
+      .leftofmatter p{
+        font-size: 25px;
+        font-family: Verdana, Geneva, Tahoma, sans-serif;
+        font-weight: bold;
+        text-align: justify;
+      }
+     .rightofmatter{
+      width: 50%;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+
+     }
+      /* .submatter {
         width: 50%;
         font-size: 30px;
         font-family: Verdana, Geneva, Tahoma, sans-serif;
         font-weight: bold;
-      }
+      } */
       .stimg{
         height: 300px;
 
       }
+      
       @media screen and (max-width:1180px) {
         .imgdiv{
           display: flex;
@@ -160,8 +181,14 @@
      </div>        
     </div>
     <div class="matter">
-      <p class="submatter">Your Journey with Student Tribe Doesn't End Here  It's Just the Beginning. Stay Curious, Stay Connected, Stay Ahead!</p>
-      <img src="./st.png" class="stimg" />
+      
+      <div class="leftofmatter">
+        <p class="submatter">Your Journey with Student Tribe Doesn't End Here  It's Just the Beginning. Stay Curious, Stay Connected, Stay Ahead!</p>
+      </div>
+      <div class="rightofmatter">
+        <img src="./st.png" class="stimg" />
+      </div>
+      
     </div>
     <div class="imgdiv">
        <div class="">     
